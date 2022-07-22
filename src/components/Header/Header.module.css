@@ -1,0 +1,128 @@
+.header>div:first-child {
+    padding: 4px 15px 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div:first-child div:first-child svg {
+    padding: 8px 9px 9px;
+    font-size: 16px;
+}
+
+.header div:first-child div:first-child svg:first-child {
+    margin-right: 8px;
+}
+
+.header div:first-child div:first-child svg:hover {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;    
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.header div:first-child ul {
+    height: 23px;
+    margin-top: 2px;
+    margin-left: 200px;
+}
+
+.header div:first-child ul li {
+    padding: 7px 8px 6px;
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.header div:first-child ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:hover {
+    background-color: #f7f7f7;
+    border-radius: 4px;    
+}
+
+.header div:first-child div:nth-child(3) button:first-child {
+    margin-right: 7px;
+}
+
+.header > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    margin-bottom: 4px;
+}
+
+.header div:nth-child(2)>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.header div:nth-child(2) div:first-child span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header .clima{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    min-height: 36px;
+    min-width: 105px;
+}
+
+.clima div:first-child span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.clima div:last-child span, .clima div:last-child svg{
+    font-size: 12px;
+}
+
+.clima div:last-child span:last-child, .clima div:last-child svg {
+    color: green;
+}
+
+.clima div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header div:nth-child(2) div:nth-child(2) div:last-of-type{
+    height: 12px;
+}
+
+small {
+    font-size: 10px;
+}
+
+.header > div:last-of-type{
+    border-top: 1px solid #ebebeb;
+    padding: 4px 0;
+    border-bottom: 1px solid #000;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 4px;
+    margin: 0 60px;
+}
+
+.sections li {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px;
+}
