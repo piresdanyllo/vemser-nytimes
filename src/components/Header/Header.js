@@ -51,24 +51,10 @@ const Header = () => {
       <div>
         <ul className={styles.sections}>
           <List value="World"></List>
-          <List value="U.S."></List>
           <List value="Politics"></List>
-          <List value="N.Y."></List>
-          <List value="Business"></List>
-          <List value="Opinion"></List>
           <List value="Tech"></List>
           <List value="Science"></List>
           <List value="Health"></List>
-          <List value="Sports"></List>
-          <List value="Arts"></List>
-          <List value="Books"></List>
-          <List value="Style"></List>
-          <List value="Food"></List>
-          <List value="Travel"></List>
-          <List value="Magazine"></List>
-          <List value="T Magazine"></List>
-          <List value="Real State"></List>
-          <List value="Video"></List>
         </ul>
       </div>
     </div>
