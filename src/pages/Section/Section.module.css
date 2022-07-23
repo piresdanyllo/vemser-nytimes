@@ -1,0 +1,25 @@
+.section h1 {
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: -6px;
+    margin-top: 6px;
+    font-family: nyt-karnak,georgia,'times new roman',times,serif;
+    font-weight: 900;
+}
+
+.section ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.section ul li {
+    padding: 0;
+}
