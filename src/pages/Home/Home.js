@@ -1,6 +1,11 @@
+import Section from "../Section/Section"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <div>Home</div>
+      <Section /> 
+    </>
   )
 }
 

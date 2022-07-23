@@ -92,12 +92,11 @@
     align-self: center;
 }
 
-ul li {
+.footer ul li {
     cursor: pointer;
 }
-ul li:hover {
+.footer ul li:hover {
     text-decoration: underline;
     background-color: transparent;
-
 }
 
