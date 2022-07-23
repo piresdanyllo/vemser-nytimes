@@ -67,6 +67,7 @@ function App() {
         <Route path='/' element={<Section api={world} section={section} />} />
         {/* <Route path='/section/technology' element={<Section api={tech} section={section}/>}/> */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
