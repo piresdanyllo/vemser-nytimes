@@ -86,29 +86,47 @@ const Footer = () => {
         <div>
           <span>SUBSCRIBE</span>
           <ul>
-            <List value="Home Delivery"></List>
-            <List value="Digital Subscriptions"></List>
-            <List value="Games"></List>
-            <List value="Cooking"></List>
+            <List value="Home Delivery"/>
+            <List value="Digital Subscriptions"/>
+            <List value="Games"/>
+            <List value="Cooking"/>
           </ul>
           <ul>
-            <List value="Email Newsletters"></List>
-            <List value="Corporate Subscriptions"></List>
-            <List value="Education Rate"></List>
+            <List value="Email Newsletters"/>
+            <List value="Corporate Subscriptions"/>
+            <List value="Education Rate"/>
           </ul>
           <ul>
-            <List value="Mobile Applications"></List>
-            <List value="Replica Edition"></List>
-            <List value="International"></List>
-            <List value="Canada"></List>
-            <List value="Español"></List>
-            <List value="中文网"></List>
+            <List value="Mobile Applications"/>
+            <List value="Replica Edition"/>
+            <List value="International"/>
+            <List value="Canada"/>
+            <List value="Español"/>
+            <List value="中文网"/>
           </ul>
         </div>
       </div>
 
+      <div className={styles.lastLi}>
+      <ul>
+        <List value="© 2022 The New York Times Company"/>
+        <List value="NYTCo"/>
+        <List value="Contact Us"/>
+        <List value="Accessibility"/>
+        <List value="Work with us"/>
+        <List value="Advertise"/>
+        <List value="T Brand Studio"/>
+        <List value="Your Ad Choices"/>
+        <List value="Privacy Policy"/>
+        <List value="Terms of Service"/>
+        <List value="Terms of Sale"/>
+        <List value="Site Map"/>
+        <List value="Help"/>
+        <List value="Subscriptions"/>
+      </ul>
+      </div>
     </div>
   )
 }
 
-export default Footer
+export default Footer;
