@@ -1,0 +1,103 @@
+.footer::before {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top: 2px solid rgb(226, 226, 226);
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 0px;
+}
+
+.footer svg {
+    font-size: 5px;
+    display: block;
+    height: 44px;
+    width: 184px;
+}
+
+.footer div div{
+    display: block;
+    width: 15vw;
+}
+
+.listas {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.listas ul {
+    padding:0;
+}
+
+.listas ul li {
+    padding: 3px 0;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+
+.footer span {
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 150px;
+    line-height: 15px;
+    height: 25px;
+    font-weight: 700;
+}
+
+.footer div > div:last-child{
+    border-left: 1px solid rgb(226, 226, 226);
+    flex: 1 1 0%;
+    padding-left: 15px;
+}
+
+.footer div > div:last-child ul:first-of-type li {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer div > div:last-child ul:nth-child(3) li,
+.footer div > div:last-child ul:nth-child(4) li {
+    font-size: 11px;
+}
+
+.footer div > div:last-child ul:last-child{
+    margin: 2px 0px 0px;
+    padding: 20px 0;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.footer div > div:last-child li {
+    width: 200px;
+}
+
+.lastLi ul{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ebebeb;
+    padding: 5px 30px;
+}
+
+.lastLi ul li {
+    font-size: 10px;
+    color: #666;
+    padding: 10px 0;
+    white-space: nowrap;
+    align-self: center;
+}
+
+ul li {
+    cursor: pointer;
+}
+ul li:hover {
+    text-decoration: underline;
+    background-color: transparent;
+
+}
+
