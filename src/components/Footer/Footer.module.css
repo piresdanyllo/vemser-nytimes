@@ -23,11 +23,12 @@
 .listas {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .listas ul {
     padding:0;
+    margin-top: 10px;
 }
 
 .listas ul li {
@@ -38,7 +39,6 @@
     width: 150px;
     font-size: 12px;
     font-weight: 500;
-    height: 23px;
     line-height: 16px;
 }
 
@@ -46,8 +46,6 @@
     font-size: 13px;
     text-transform: uppercase;
     width: 150px;
-    line-height: 15px;
-    height: 25px;
     font-weight: 700;
 }
 
@@ -94,6 +92,7 @@
 
 .footer ul li {
     cursor: pointer;
+    list-style: none;
 }
 .footer ul li:hover {
     text-decoration: underline;

@@ -1,25 +1,39 @@
 .section h1 {
     font-size: 44px;
     line-height: 44px;
-    margin-bottom: -6px;
-    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-top: 40px;
     font-family: nyt-karnak,georgia,'times new roman',times,serif;
     font-weight: 900;
 }
 
 .section ul {
+    list-style: none;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    padding: 0;
-
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 2px solid #121212;
 }
 
 .section ul li {
     padding: 0;
+    font-size: 11px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.section ul li:hover {
+    text-decoration: underline;
+}
+.section ul li::after {
+    padding-right: 8px;
+    border-right: 1px solid #DFDFDF;
+    content: '';
+}
+
+.section ul li:last-child::after {
+    border-right: none;
 }

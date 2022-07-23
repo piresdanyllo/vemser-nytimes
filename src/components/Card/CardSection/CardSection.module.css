@@ -1,0 +1,33 @@
+.cardSection {
+    width: 50%;
+}
+
+.cardSection div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 10px 10px 10px 0; */
+}
+
+.cardSection small {
+    font-size: 0.625rem;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 0.75rem;
+    margin-top: 5px;
+    color: #727272;
+    text-transform: uppercase;
+    display: flex;
+    align-self: end;
+}
+
+.cardSection h3 {
+    font-size: 23px;
+    font-family: georgia,'times new roman',times,serif;
+    padding: 0;
+}
+
+.cardSection p {
+    font-family: georgia,'times new roman',times,serif;
+    font-size: 0.9375rem;
+}

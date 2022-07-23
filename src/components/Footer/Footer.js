@@ -34,7 +34,7 @@ const Footer = () => {
           <span>ARTS</span>
           <ul>
             <List value="Today's Arts"/>
-            <List value="Art and Design"/>
+            <List value="Art &amp; Design"/>
             <List value="Books"/>
             <List value="Best Sellers Book List"/>
             <List value="Dance"/>
@@ -74,7 +74,7 @@ const Footer = () => {
             <List value="Headway"/>
             <List value="Live Events"/>
             <List value="The Learning Network"/>
-            <List value="Tools and Services"/>
+            <List value="Tools &amp; Services"/>
             <List value="Podcasts"/>
             <List value="Video"/>
             <List value="TimesMachine"/>

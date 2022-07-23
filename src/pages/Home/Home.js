@@ -1,7 +1,8 @@
 // import Section from "../Section/Section"
 import axios from "axios"
 import { useState, useEffect } from "react"
-import CardHome from "../../components/Card/CardHome/CardHome"
+import Header from "../../components/Header/Header"
+// import CardHome from "../../components/Card/CardHome/CardHome"
 
 const Home = () => {
 
@@ -23,15 +24,14 @@ const Home = () => {
 
   return (
     <>
-      {/* <div>teste section</div>
-      <Section />  */}
+    <Header />
     <div>
       <div>
-        <CardHome title={home[0].title} abstract={home[0].abstract} url={home[0].multimedia[1].url} caption={home[0].multimedia[1].caption} copyright={home[0].multimedia[1].copyright}/>
+        {/* <CardHome title={home[0].title} abstract={home[0].abstract} url={home[0].multimedia[1].url} caption={home[0].multimedia[1].caption} copyright={home[0].multimedia[1].copyright}/>
         <CardHome title={home[1].title} abstract={home[1].abstract} url={home[1].multimedia[1].url} caption={home[1].multimedia[1].caption} copyright={home[1].multimedia[1].copyright}/>
         <CardHome title={home[2].title} abstract={home[2].abstract} url={home[2].multimedia[1].url} caption={home[2].multimedia[1].caption} copyright={home[2].multimedia[1].copyright}/>
         <CardHome title={home[3].title} abstract={home[3].abstract} url={home[3].multimedia[1].url} caption={home[3].multimedia[1].caption} copyright={home[3].multimedia[1].copyright}/>
-        <CardHome title={home[4].title} abstract={home[4].abstract} url={home[4].multimedia[1].url} caption={home[4].multimedia[1].caption} copyright={home[4].multimedia[1].copyright}/>
+        <CardHome title={home[4].title} abstract={home[4].abstract} url={home[4].multimedia[1].url} caption={home[4].multimedia[1].caption} copyright={home[4].multimedia[1].copyright}/> */}
       </div>
       <div></div>
     </div>

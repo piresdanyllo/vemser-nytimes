@@ -1,20 +1,54 @@
-// import axios from 'axios';
+import { useEffect, useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import axios from 'axios'
 
 import './App.css';
-import Home from './pages/Home/Home'
-import Header from './components/Header/Header';
-// import HeaderSection  from './components/Header/HeaderSection/HeaderSection';
+// import Home from './pages/Home/Home'
 import Footer from './components/Footer/Footer';
-// import Section from './pages/Section/Section';
+import Section from './pages/Section/Section';
 
 function App() {
+
+  const [world, setWorld] = useState([]);
+  const [section, setSection] = useState([]);
+  const [tech, setTech] = useState([]);
+
+  const setupWorld = async () => {
+    try {
+      const {data} = await axios.get('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=vrgFjjAGQDr8uwf0OzcjOkLG2KMDXtdi')
+      setWorld(data.results)
+      setSection(data.section)
+      console.log(section)
+    } catch (error) {
+      console.log(error)
+    }
+   }
+    useEffect(() => {
+      setupWorld()
+    },[]);
+
+    const setupTech = async () => {
+      try {
+        const {data} = await axios.get('https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=vrgFjjAGQDr8uwf0OzcjOkLG2KMDXtdi')
+        setTech(data.results)
+        setSection(data.section)
+        console.log(section)
+      } catch (error) {
+        console.log(error)
+      }
+     }
+      useEffect(() => {
+        setupTech()
+      },[]);
+
+    console.log(section)
   return (
     <BrowserRouter>
-    <Header/>
-    {/* <HeaderSection/> */}
+
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      {/* <Route path='/' element={<Home/>}/> */}
+      <Route path='/' element={<Section api={world} section={section}/>}/>
+      {/* <Route path='/section/technology' element={<Section api={tech} section={section}/>}/> */}
     </Routes>
     <Footer/>
     </BrowserRouter>
