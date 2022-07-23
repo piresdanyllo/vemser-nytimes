@@ -1,7 +1,6 @@
 .cardContainer {
     display: flex;
     width: 830px;
-    height: 392px;
     padding: 24px 0;
     border-top: 1px solid #121212;
     margin-top: 20px;
@@ -13,7 +12,8 @@
 }
 .cardText h3 {
     font-size: 20px;
-    font-weight: bold;    
+    font-weight: bold;
+    margin-bottom: 20px;    
 }
 
 .cardText p {
