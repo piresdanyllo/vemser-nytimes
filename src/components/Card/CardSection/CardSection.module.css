@@ -1,15 +1,17 @@
 .cardSection {
     width: 50%;
+    padding: 20px 10px 0 20px;
+    border-right: 1px solid #DFDFDF;
 }
 
-.cardSection div:first-child {
+.cardSection div:first-child, .cardSectionMini div:first-child{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* padding: 10px 10px 10px 0; */
+    padding: 10px 10px 10px 0;
 }
 
-.cardSection small {
+.cardSection small, .cardSectionMini small {
     font-size: 0.625rem;
     display: inline-block;
     font-weight: 500;
@@ -21,13 +23,25 @@
     align-self: end;
 }
 
-.cardSection h3 {
+.cardSection h3, .cardSectionMini h3 {
     font-size: 23px;
     font-family: georgia,'times new roman',times,serif;
-    padding: 0;
+    padding: 10px 0;
 }
 
-.cardSection p {
+.cardSection p,.cardSectionMini p {
     font-family: georgia,'times new roman',times,serif;
     font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+}
+
+.cardSectionMini {
+    width: 25%;
+    padding: 20px;
+    border-right: 1px solid #DFDFDF;
+}
+
+.cardSectionMini img {
+    max-width: 300px;
 }
