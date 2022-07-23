@@ -1,3 +1,4 @@
+import Section from "../Section/Section"
 import axios from "axios"
 import { useState, useEffect } from "react"
 import CardHome from "../../components/Card/CardHome/CardHome"
