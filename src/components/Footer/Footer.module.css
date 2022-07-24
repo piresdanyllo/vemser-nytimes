@@ -24,6 +24,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
+    margin-bottom: 10px;
+
 }
 
 .listas ul {

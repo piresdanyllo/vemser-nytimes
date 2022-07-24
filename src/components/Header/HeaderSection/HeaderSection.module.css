@@ -11,9 +11,16 @@
 }
 
 .header p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 20px;
+    font-family: helvetica,arial,sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header p:hover {
+    text-decoration: underline;
 }
 
 .header div:first-child svg {

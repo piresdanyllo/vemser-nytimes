@@ -4,3 +4,13 @@
     align-items: center;
     padding: 50px 0;
 }
+
+.newsContainer h1 {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.newsContainer h1:hover {
+    color: #000;
+    cursor: auto;
+}

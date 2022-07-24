@@ -11,6 +11,11 @@
     font-weight: bold;
 }
 
+.sectionText h1:hover {
+    color: #000;
+    cursor: auto;
+}
+
 .sectionNav ul {
     display: flex;
     padding: 9px 0 7px;
@@ -25,6 +30,7 @@
 
 .sectionNav ul li:hover {
     text-decoration: underline;
+    background-color: transparent;
 }
 
 .sectionNav ul li:first-child {

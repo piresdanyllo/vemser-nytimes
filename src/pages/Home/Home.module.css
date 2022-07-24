@@ -48,6 +48,8 @@
 
 .quickNewsContainer p {
     font-size: 12px;
+    padding-top: 5px;
+    color: #5A5A5A;
 }
 
 .quickNewsContainer img {
@@ -63,15 +65,19 @@
 .playContainer h3 {
     padding-bottom: 10px;
     font-size: 14px;
+    font-family: helvetica,arial,sans-serif;
+    margin-bottom: 10px;
 }
 
 .plays,
 .play {
     display: flex;
+
 }
 
 .plays {
     justify-content: space-between;
+
 }
 
 .plays:first-of-type {
@@ -99,6 +105,8 @@
 
 .play p {
     font-size: 14px;
+    color: #5A5A5A;
+    padding-top: 10px;
 }
 
 .play img {
@@ -119,7 +127,14 @@
     width: 215px;
 }
 
+.lastestNewsContainer h3 {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 13px;
+}
+
 .lastestNewsSection h4 {
+    font-family: helvetica,arial,sans-serif;
+    font-size: 13px;
     padding: 10px 0;
 }
 

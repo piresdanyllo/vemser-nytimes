@@ -10,7 +10,6 @@ const HeaderSection = ({ section }) => {
         <FaBars />
         <FaSearch />
         <p>{section}</p>
-        {/* <Link to={url}>{section}</Link> */}
       </div>
       <Link to='/'>
       <svg viewBox="0 0 184 25">

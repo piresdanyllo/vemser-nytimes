@@ -1,6 +1,7 @@
 .sectionText {
     height: 74px;
     margin-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: end;
     border-bottom: 1px solid #dfdfdf;
@@ -8,13 +9,18 @@
 
 .sectionText h1 {
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 900;
+}
+
+.sectionText h1:hover {
+    color: #000;
+    cursor: auto;
 }
 
 .sectionNav ul {
     display: flex;
     padding: 9px 0 7px;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .sectionNav ul li {
@@ -25,6 +31,7 @@
 
 .sectionNav ul li:hover {
     text-decoration: underline;
+    background-color: transparent;
 }
 
 .sectionNav ul li:first-child {
