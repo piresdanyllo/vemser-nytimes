@@ -62,6 +62,15 @@
     font-weight: 700;
 }
 
+.footer div > div:last-child ul:first-of-type li::before {
+    font-family: "Font Awesome";
+    content: "\f1ea";
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 .footer div > div:last-child ul:nth-child(3) li,
 .footer div > div:last-child ul:nth-child(4) li {
     font-size: 11px;
@@ -100,4 +109,3 @@
     text-decoration: underline;
     background-color: transparent;
 }
-
