@@ -9,7 +9,7 @@ const News = () => {
   let identificador = parseInt(pathSplit[2]);
   let section = pathSplit[3];
 
-  const [id, setId] = useState('')
+  const [id, setId] = useState('');
 
   const [news, setNews] = useState([]);
 
@@ -34,13 +34,17 @@ const News = () => {
       <HeaderSection />
       {news.slice(id, (id+1)).map((item ,i) => (
       <div key={i} className={styles.newsContainer}>
+        <small>{item.kicker}</small>
         <h1>{item.title}</h1>
         <p>{item.abstract}</p>
         <img src={item.multimedia[1].url} alt="" />
         <small>{item.caption} {item.copyright}</small>
         <p>{item.abstract}</p>
+        <small>{item.byline}</small>
+        <small>{item.created_date}</small>
+        <p>{item.abstract}</p>
       </div>
-      ))}      
+      ))}
     </>
   );
 };

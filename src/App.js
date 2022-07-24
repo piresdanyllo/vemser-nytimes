@@ -23,7 +23,7 @@ function App() {
   const setupWorld = async () => {
     try {
       const { data } = await axios.get(
-        "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=7gazRYMJQ6vO0wTGQcKjSPpTsWRwnnhp"
+        "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=6XPMtw9fl1Pb1ingbJozVVcqE63AtaSV"
       );
       setWorld(data.results);
     } catch (error) {

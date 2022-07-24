@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import List from "../List/List";
 import styles from "./Footer.module.css";
+import { ImNewspaper } from "react-icons/im";
 
 const Footer = () => {
   return (
