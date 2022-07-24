@@ -1,4 +1,4 @@
-import CardSection from "./CardSection/CardSection";
+import CardSection from "./CardSection/CardSection"
 import CardSectionMini from "./CardSection/CardSectionMini";
 import CardSectionAside from "./CardSection/CardSectionAside";
 import styles from "./Section.module.css";

@@ -1,22 +1,65 @@
 .newsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 50px 0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .newsContainer h1 {
-    font-size: 44px;
-    font-weight: 900;
+    font-size: 47px;
+    font-weight: 10;
     margin-bottom: 20px;
+    text-align: left;
+    color: #121212;
 }
 
 .newsContainer h1:hover {
-    color: #000;
+    color: #121212;
     cursor: auto;
 }
 
-.newsContainer h3:hover {
-    text-decoration: underline;
-    color: #000;
+.newsContainer p {
+    font-size: 23px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    text-align: left;
+    color: #363636;
 }
+
+.newsContainer img {
+    padding: 30px 0 20px 0;
+    border-top: 1px solid #DFDFDF;
+}
+
+.newsContainer p:nth-of-type(2) {
+    font-size: 15px;
+    color: #727272;
+    text-align: left;
+}
+
+.newsContainer p:nth-of-type(3) {
+    font-size: 20px;
+    color: #363636;
+    padding-bottom: 30px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.newsContainer small:nth-of-type(3) {
+    color: #333;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: 1px underline #727272;
+    text-underline-offset: 1px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.newsContainer small:nth-of-type(4) {
+    font-size: 13px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
