@@ -57,6 +57,7 @@
 
 .playContainer {
     padding: 20px 0;
+    border-bottom: 1px solid #000;
 }
 
 .playContainer h3 {
@@ -103,4 +104,33 @@
 .play img {
     width: 90px;
     height: 90px;
+}
+
+.lastestNewsContainer {
+    padding: 20px 0;
+}
+
+.lastestNewsContainer > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastestNewsSection {
+    width: 215px;
+}
+
+.lastestNewsSection h4 {
+    padding: 10px 0;
+}
+
+.lastestNewsSection img {
+    width: 100%;
+    height: 143px;
+}
+
+.lastestNewsSection p {
+    font-size: 14px;
+    padding: 10px 0;
+    letter-spacing: 0.2px;
+    line-height: 1.125rem;
 }
