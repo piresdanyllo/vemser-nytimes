@@ -1,6 +1,6 @@
 import HeaderSection from '../../components/Header/HeaderSection/HeaderSection'
 import List from '../../components/List/List'
-import Section from '../../components/Section/Section'
+import Section from '../Section/Section'
 import styles from './Science.module.css'
 
 const Science = ({api}) => {

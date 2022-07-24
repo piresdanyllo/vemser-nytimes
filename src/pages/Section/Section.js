@@ -1,6 +1,4 @@
 import CardSection from "../../components/Card/CardSection/CardSection";
-import HeaderSection from "../../components/Header/HeaderSection/HeaderSection";
-import List from "../../components/List/List";
 import styles from "./Section.module.css";
 
 const Section = ({ api }) => {
