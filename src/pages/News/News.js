@@ -16,7 +16,7 @@ const News = () => {
   const setup = async () => {
     try {
       const { data } = await axios.get(
-        `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=hneVGzao1mNHHI7NL2dGC9Rax0EULZR5`
+        `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=ZAn70KHg6H4TkxRCJSdo33i8RNuL6RcC`
       );
       setNews(data.results);
       setId(identificador)
@@ -32,7 +32,7 @@ const News = () => {
   return (
     <>
       <HeaderSection />
-      {news.slice(id, id+1).map((item ,i) => (
+      {news.slice(id, (id+1)).map((item ,i) => (
       <div key={i} className={styles.newsContainer}>
         <h1>{item.title}</h1>
         <p>{item.abstract}</p>

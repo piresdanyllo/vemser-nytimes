@@ -20,7 +20,7 @@ const Science = ({api}) => {
         <List value='OUT THERE'/>
         <List value='CORONAVIRUS OUTBREAK'/>
       </ul>
-      <Section api={api}/>
+      <Section api={api} section="science"/>
     </div>
     </>
   )

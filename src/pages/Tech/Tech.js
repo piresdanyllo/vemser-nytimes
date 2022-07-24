@@ -23,7 +23,7 @@ const Tech = ({api}) => {
         <List value='YOUR MONEY'/>
         <List value='MUTUAL FUND AND ETFS'/>
       </ul>
-      <Section api={api}/>
+      <Section api={api} section="technology"/>
     </div>
     </>
   )

@@ -20,7 +20,7 @@ const World = ({api}) => {
         <List value='EUROPE'/>
         <List value='MIDDLE EAST'/>
       </ul>
-      <Section api={api}/>
+      <Section api={api} section="world"/>
     </div>
     </>
   )
