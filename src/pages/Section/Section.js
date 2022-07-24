@@ -9,7 +9,7 @@ const Section = ({ api }) => {
             <div className={styles.blocoNoticias}>
 
                 <div>
-                    {api.slice(1, 2).map((world, i) => (
+                    {api.slice(2, 3).map((world, i) => (
                         <CardSection
                             key={i}
                             url={world.multimedia[1].url}
@@ -23,7 +23,7 @@ const Section = ({ api }) => {
                 </div>
 
                 <div>
-                    {api.slice(2, 3).map((world, i) => (
+                    {api.slice(4, 5).map((world, i) => (
                         <CardSectionMini
                             key={i}
                             url={world.multimedia[1].url}
@@ -37,7 +37,7 @@ const Section = ({ api }) => {
                 </div>
 
                 <div>
-                    {api.slice(3, 4).map((world, i) => (
+                    {api.slice(5, 6).map((world, i) => (
                         <CardSectionAside
                             key={i}
                             url={world.multimedia[1].url}
