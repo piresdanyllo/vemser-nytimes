@@ -7,7 +7,9 @@ const CardSectionAside = ({ title, abstract, url, kicker, byline }) => {
                 <small>{kicker}</small>
                 <h3>{title}</h3>
                 <div>
-                    <img src={url} alt="" />
+                    <div>
+                        <img src={url} alt="" />
+                    </div>
                     <p>{abstract}</p>
                 </div>
                 <small>{byline}</small>

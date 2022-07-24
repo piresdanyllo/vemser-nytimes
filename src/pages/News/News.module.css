@@ -8,9 +8,15 @@
 .newsContainer h1 {
     font-size: 44px;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .newsContainer h1:hover {
     color: #000;
     cursor: auto;
+}
+
+.newsContainer h3:hover {
+    text-decoration: underline;
+    color: #000;
 }
