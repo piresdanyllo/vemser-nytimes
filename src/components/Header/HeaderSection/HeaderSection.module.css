@@ -27,6 +27,7 @@
     padding: 8px 9px 9px;
     font-size: 16px;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .header div:first-child svg:hover {

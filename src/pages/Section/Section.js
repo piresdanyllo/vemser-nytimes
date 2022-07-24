@@ -22,6 +22,9 @@ const Section = ({ api }) => {
                     ))}
                 </div>
 
+                <div className={styles.verticalline}>
+                </div>
+
                 <div>
                     {api.slice(4, 5).map((world, i) => (
                         <CardSectionMini
@@ -36,18 +39,38 @@ const Section = ({ api }) => {
                     ))}
                 </div>
 
+                <div className={styles.verticalline}>
+                </div>
+
                 <div>
-                    {api.slice(5, 6).map((world, i) => (
-                        <CardSectionAside
-                            key={i}
-                            url={world.multimedia[1].url}
-                            copyright={world.multimedia[1].copyright}
-                            kicker={world.kicker}
-                            title={world.title}
-                            abstract={world.abstract}
-                            byline={world.byline}
-                        />
-                    ))}
+                    <div>
+                        {api.slice(5, 6).map((world, i) => (
+                            <CardSectionAside
+                                key={i}
+                                url={world.multimedia[1].url}
+                                copyright={world.multimedia[1].copyright}
+                                kicker={world.kicker}
+                                title={world.title}
+                                abstract={world.abstract}
+                                byline={world.byline}
+                            />
+                        ))}
+                    </div>
+                    <div className={styles.horizontallLine}>
+                    </div>
+                    <div>
+                        {api.slice(6, 7).map((world, i) => (
+                            <CardSectionAside
+                                key={i}
+                                url={world.multimedia[1].url}
+                                copyright={world.multimedia[1].copyright}
+                                kicker={world.kicker}
+                                title={world.title}
+                                abstract={world.abstract}
+                                byline={world.byline}
+                            />
+                        ))}
+                    </div>
                 </div>
 
             </div>
