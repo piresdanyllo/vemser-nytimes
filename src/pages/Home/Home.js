@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Aside from "../../components/Aside/Aside";
 import CardHome from "../../components/Card/CardHome/CardHome";
 import Header from "../../components/Header/Header";
@@ -15,15 +16,16 @@ const Home = ({ home, world, tech, science, health, politic }) => {
       <Header />
       <div className={styles.main}>
         <div className={styles.newsContainer}>
-          {home.slice(0, 5).map((home, i) => (
-            <CardHome
-              key={i}
-              title={home.title}
-              abstract={home.abstract}
-              url={home.multimedia[1].url}
-              caption={home.multimedia[1].caption}
-              copyright={home.multimedia[1].copyright}
-            />
+          {home.slice(0, 5).map((h, i) => (
+            <Link key={i} to={`/news/${home.indexOf(h)}/home`}>
+              <CardHome
+                title={h.title}
+                abstract={h.abstract}
+                url={h.multimedia[1].url}
+                caption={h.multimedia[1].caption}
+                copyright={h.multimedia[1].copyright}
+              />
+            </Link>
           ))}
         </div>
         <div className={styles.asideContainer}>
@@ -31,14 +33,14 @@ const Home = ({ home, world, tech, science, health, politic }) => {
         </div>
       </div>
       <div className={styles.quickNewsContainer}>
-        {home.slice(16, 20).map((home, i) => (
-          <div key={i}>
-            <div className={styles.quickNewsText}>
-              <h5>{home.title}</h5>
-              <p>{home.abstract}</p>
-            </div>
-            <img src={home.multimedia[2].url} alt="" />
-          </div>
+        {home.slice(16, 20).map((h, i) => (
+          <Link key={i} to={`/news/${home.indexOf(h)}/home`}>            
+              <div className={styles.quickNewsText}>
+                <h5>{h.title}</h5>
+                <p>{h.abstract}</p>
+              </div>
+              <img src={h.multimedia[2].url} alt="" />            
+          </Link>
         ))}
       </div>
       <div className={styles.playContainer}>

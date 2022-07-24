@@ -25,13 +25,13 @@
     border-bottom: 1px solid #000;
 }
 
-.quickNewsContainer>div {
+.quickNewsContainer> a {
     display: flex;
     padding-right: 15px;
     border-right: 1px solid #DFDFDF;
 }
 
-.quickNewsContainer>div:last-child {
+.quickNewsContainer a:last-child {
     border-right: none;
 }
 
