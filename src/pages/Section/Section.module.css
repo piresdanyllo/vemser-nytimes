@@ -16,6 +16,7 @@
     margin-top: 10px;
     border-top: 1px solid #DFDFDF;
     border-bottom: 2px solid #121212;
+    margin-bottom: 20px;
 }
 
 .section ul li {
@@ -37,3 +38,8 @@
 .section ul li:last-child::after {
     border-right: none;
 }
+
+.blocoNoticias {
+    display: flex;
+}
+
