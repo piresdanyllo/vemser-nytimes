@@ -34,7 +34,7 @@ function App() {
   const setup = async () => {
     try {
       const { data } = await axios.get(
-        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=hneVGzao1mNHHI7NL2dGC9Rax0EULZR5"
+        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ZAn70KHg6H4TkxRCJSdo33i8RNuL6RcC"
       );
       setHome(data.results);
     } catch (error) {

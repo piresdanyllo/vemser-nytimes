@@ -96,98 +96,98 @@ const Home = ({ home, world, tech, science, health, politic }) => {
         <h3>NEWS</h3>
         <div>
           <div className={styles.lastestNewsSection}>
-            {world.slice(1, 2).map((world, i) => (
-              <div key={i}>
+            {world.slice(1, 2).map((w, i) => (
+              <Link key={i} to={`/news/${world.indexOf(w)}/world`}>
                 <h4>World News</h4>
-                <img src={world.multimedia[2].url} alt="" />
-                <p>{world.abstract}</p>
-              </div>
+                <img src={w.multimedia[2].url} alt="" />
+                <p>{w.abstract}</p>
+              </Link>
             ))}
-            {world.slice(2, 3).map((world, i) => (
-              <div key={i}>
-                <p>{world.abstract}</p>
-              </div>
+            {world.slice(2, 3).map((w, i) => (
+              <Link key={i} to={`/news/${world.indexOf(w)}/world`}>
+                <p>{w.abstract}</p>
+              </Link>
             ))}
-            {world.slice(3, 4).map((world, i) => (
-              <div key={i}>
-                <p>{world.abstract}</p>
-              </div>
+            {world.slice(3, 4).map((w, i) => (
+              <Link key={i} to={`/news/${world.indexOf(w)}/world`}>
+                <p>{w.abstract}</p>
+              </Link>
             ))}
           </div>
           <div className={styles.lastestNewsSection}>
-            {politic.slice(1, 2).map((politic, i) => (
-              <div key={i}>
+            {politic.slice(1, 2).map((p, i) => (
+              <Link key={i} to={`/news/${politic.indexOf(p)}/politics`}>
                 <h4>Politics</h4>
-                <img src={politic.multimedia[2].url} alt="" />
-                <p>{politic.abstract}</p>
-              </div>
+                <img src={p.multimedia[2].url} alt="" />
+                <p>{p.abstract}</p>
+              </Link>
             ))}
-            {politic.slice(2, 3).map((politic, i) => (
-              <div key={i}>
-                <p>{politic.abstract}</p>
-              </div>
+            {politic.slice(2, 3).map((p, i) => (
+              <Link key={i} to={`/news/${politic.indexOf(p)}/politics`}>
+                <p>{p.abstract}</p>
+              </Link>
             ))}
-            {politic.slice(3, 4).map((politic, i) => (
-              <div key={i}>
-                <p>{politic.abstract}</p>
-              </div>
+            {politic.slice(3, 4).map((p, i) => (
+               <Link key={i} to={`/news/${politic.indexOf(p)}/politics`}>
+               <p>{p.abstract}</p>
+             </Link>
             ))}
           </div>
           <div className={styles.lastestNewsSection}>
-            {tech.slice(1, 2).map((tech, i) => (
-              <div key={i}>
+            {tech.slice(1, 2).map((t, i) => (
+              <Link key={i} to={`/news/${tech.indexOf(t)}/technology`}>
                 <h4>Technology</h4>
-                <img src={tech.multimedia[2].url} alt="" />
-                <p>{tech.abstract}</p>
-              </div>
+                <img src={t.multimedia[2].url} alt="" />
+                <p>{t.abstract}</p>
+              </Link>
             ))}
-            {tech.slice(2, 3).map((tech, i) => (
-              <div key={i}>
-                <p>{tech.abstract}</p>
-              </div>
+            {tech.slice(2, 3).map((t, i) => (
+              <Link key={i} to={`/news/${tech.indexOf(t)}/technology`}>
+                <p>{t.abstract}</p>
+              </Link>
             ))}
-            {tech.slice(3, 4).map((tech, i) => (
-              <div key={i}>
-                <p>{tech.abstract}</p>
-              </div>
+            {tech.slice(3, 4).map((t, i) => (
+               <Link key={i} to={`/news/${tech.indexOf(t)}/technology`}>
+               <p>{t.abstract}</p>
+             </Link>
             ))}
           </div>
           <div className={styles.lastestNewsSection}>
-            {science.slice(4, 5).map((science, i) => (
-              <div key={i}>
+            {science.slice(4, 5).map((s, i) => (
+              <Link key={i} to={`/news/${science.indexOf(s)}/science`}>
                 <h4>Science</h4>
-                <img src={science.multimedia[2].url} alt="" />
-                <p>{science.abstract}</p>
-              </div>
+                <img src={s.multimedia[2].url} alt="" />
+                <p>{s.abstract}</p>
+              </Link>
             ))}
-            {science.slice(2, 3).map((science, i) => (
-              <div key={i}>
-                <p>{science.abstract}</p>
-              </div>
+            {science.slice(2, 3).map((s, i) => (
+              <Link key={i} to={`/news/${science.indexOf(s)}/science`}>
+                <p>{s.abstract}</p>
+              </Link>
             ))}
-            {science.slice(3, 4).map((science, i) => (
-              <div key={i}>
-                <p>{science.abstract}</p>
-              </div>
+            {science.slice(3, 4).map((s, i) => (
+              <Link key={i} to={`/news/${science.indexOf(s)}/science`}>
+              <p>{s.abstract}</p>
+            </Link>
             ))}
           </div>
           <div className={styles.lastestNewsSection}>
-            {health.slice(1, 2).map((health, i) => (
-              <div key={i}>
+            {health.slice(1, 2).map((he, i) => (
+              <Link key={i} to={`/news/${health.indexOf(he)}/health`}>
                 <h4>Health</h4>
-                <img src={health.multimedia[2].url} alt="" />
-                <p>{health.abstract}</p>
-              </div>
+                <img src={he.multimedia[2].url} alt="" />
+                <p>{he.abstract}</p>
+              </Link>
             ))}
-            {health.slice(2, 3).map((health, i) => (
-              <div key={i}>
-                <p>{health.abstract}</p>
-              </div>
+            {health.slice(2, 3).map((he, i) => (
+              <Link key={i} to={`/news/${health.indexOf(he)}/health`}>
+                <p>{he.abstract}</p>
+              </Link>
             ))}
-            {health.slice(3, 4).map((health, i) => (
-              <div key={i}>
-                <p>{health.abstract}</p>
-              </div>
+            {health.slice(3, 4).map((he, i) => (
+              <Link key={i} to={`/news/${health.indexOf(he)}/health`}>
+              <p>{he.abstract}</p>
+            </Link>
             ))}
           </div>
         </div>

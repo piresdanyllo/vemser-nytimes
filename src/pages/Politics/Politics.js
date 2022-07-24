@@ -15,7 +15,7 @@ const Politics = ({api}) => {
         <List value='JOE BIDEN'/>
         <List value='2022 MIDTERM ELECTIONS'/>
       </ul>
-      <Section api={api}/>
+      <Section api={api} section="politics"/>
     </div>
     </>
   )

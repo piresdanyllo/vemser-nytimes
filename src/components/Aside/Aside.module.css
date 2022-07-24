@@ -32,12 +32,12 @@
     border-bottom: 1px solid #000;
 }
 
-.secondAside div:first-child {
+.secondAside a:first-child {
     padding-right: 10px;
     border-right: 1px solid #DFDFDF;
 }
 
-.secondAside div:last-child {
+.secondAside a:last-child {
     padding-left: 10px;
 }
 
@@ -53,17 +53,14 @@
     margin-top: 15px;
 }
 
-.thirdAside h3:hover {
-}
-
-.thirdAside div {
+.thirdAside a {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: 1px solid #DFDFDF;
 }
 
-.thirdAside div:last-child {
+.thirdAside a:last-child {
     border-bottom: none
 }
 
