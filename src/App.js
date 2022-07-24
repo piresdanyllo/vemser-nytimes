@@ -116,7 +116,7 @@ function App() {
         <Route path="/section/politics" element={<Politics api={politics}/>} />
         <Route path="/section/science" element={<Science api={science}/>} />
         <Route path="/section/health" element={<Health api={health}/>} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news/:id/:section" element={<News/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

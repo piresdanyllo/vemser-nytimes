@@ -24,6 +24,11 @@
     color: #5a5a5a;
 }
 
+.cardImg {
+    display: flex;
+    flex-direction: column;
+}
+
 .cardImg img {
     width: 500px;
     height: 340px;
@@ -32,4 +37,5 @@
 .cardImg small {
     font-size: 10px;
     color: #727272;
+    padding: 5px 0;
 }
