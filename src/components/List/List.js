@@ -1,7 +1,9 @@
-const List = ({value}) => {
+const List = ({ value }) => {
   return (
-    <li>{value}</li>
-  )
-}
+    <>
+      <li>{value}</li>
+    </>
+  );
+};
 
-export default List
+export default List;

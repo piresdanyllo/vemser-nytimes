@@ -2,20 +2,20 @@ import Aside from "../../components/Aside/Aside";
 import CardHome from "../../components/Card/CardHome/CardHome";
 import Header from "../../components/Header/Header";
 import styles from "./Home.module.css";
-import bee from '../../img/spelling-bee-logo-bulletin-square320-v5.png'
-import wordle from '../../img/alpha-wordle-icon-new-square320-v2.png'
-import crossword from '../../img/crossword-logo-nytgames-hires-square320-v3.png'
-import chess from '../../img/Alpha-chess-new-icon-square320.png'
-import letter from '../../img/alpha-letterboxed-promo-1622145789727-square320.png'
-import tiles from '../../img/tiles-logo-nytgames-hi-res-square320-v4.png'
+import bee from "../../img/spelling-bee-logo-bulletin-square320-v5.png";
+import wordle from "../../img/alpha-wordle-icon-new-square320-v2.png";
+import crossword from "../../img/crossword-logo-nytgames-hires-square320-v3.png";
+import chess from "../../img/Alpha-chess-new-icon-square320.png";
+import letter from "../../img/alpha-letterboxed-promo-1622145789727-square320.png";
+import tiles from "../../img/tiles-logo-nytgames-hi-res-square320-v4.png";
 
-const Home = ({ api }) => {
+const Home = ({ home, world, tech, science, health, politic }) => {
   return (
     <>
       <Header />
       <div className={styles.main}>
         <div className={styles.newsContainer}>
-          {api.slice(0, 5).map((home, i) => (
+          {home.slice(0, 5).map((home, i) => (
             <CardHome
               key={i}
               title={home.title}
@@ -27,11 +27,11 @@ const Home = ({ api }) => {
           ))}
         </div>
         <div className={styles.asideContainer}>
-          <Aside api={api} />
+          <Aside home={home} />
         </div>
       </div>
       <div className={styles.quickNewsContainer}>
-        {api.slice(16, 20).map((home, i) => (
+        {home.slice(16, 20).map((home, i) => (
           <div key={i}>
             <div className={styles.quickNewsText}>
               <h5>{home.title}</h5>
@@ -87,6 +87,106 @@ const Home = ({ api }) => {
               <p>Match visual elements and keep your chain going.</p>
             </div>
             <img src={tiles} alt="Tiles" />
+          </div>
+        </div>
+      </div>
+      <div className={styles.lastestNewsContainer}>
+        <h3>NEWS</h3>
+        <div>
+          <div className={styles.lastestNewsSection}>
+            {world.slice(1, 2).map((world, i) => (
+              <div key={i}>
+                <h4>World News</h4>
+                <img src={world.multimedia[2].url} alt="" />
+                <p>{world.abstract}</p>
+              </div>
+            ))}
+            {world.slice(2, 3).map((world, i) => (
+              <div key={i}>
+                <p>{world.abstract}</p>
+              </div>
+            ))}
+            {world.slice(3, 4).map((world, i) => (
+              <div key={i}>
+                <p>{world.abstract}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.lastestNewsSection}>
+            {politic.slice(1, 2).map((politic, i) => (
+              <div key={i}>
+                <h4>Politics</h4>
+                <img src={politic.multimedia[2].url} alt="" />
+                <p>{politic.abstract}</p>
+              </div>
+            ))}
+            {politic.slice(2, 3).map((politic, i) => (
+              <div key={i}>
+                <p>{politic.abstract}</p>
+              </div>
+            ))}
+            {politic.slice(3, 4).map((politic, i) => (
+              <div key={i}>
+                <p>{politic.abstract}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.lastestNewsSection}>
+            {tech.slice(1, 2).map((tech, i) => (
+              <div key={i}>
+                <h4>Technology</h4>
+                <img src={tech.multimedia[2].url} alt="" />
+                <p>{tech.abstract}</p>
+              </div>
+            ))}
+            {tech.slice(2, 3).map((tech, i) => (
+              <div key={i}>
+                <p>{tech.abstract}</p>
+              </div>
+            ))}
+            {tech.slice(3, 4).map((tech, i) => (
+              <div key={i}>
+                <p>{tech.abstract}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.lastestNewsSection}>
+            {science.slice(4, 5).map((science, i) => (
+              <div key={i}>
+                <h4>Science</h4>
+                <img src={science.multimedia[2].url} alt="" />
+                <p>{science.abstract}</p>
+              </div>
+            ))}
+            {science.slice(2, 3).map((science, i) => (
+              <div key={i}>
+                <p>{science.abstract}</p>
+              </div>
+            ))}
+            {science.slice(3, 4).map((science, i) => (
+              <div key={i}>
+                <p>{science.abstract}</p>
+              </div>
+            ))}
+          </div>
+          <div className={styles.lastestNewsSection}>
+            {health.slice(1, 2).map((health, i) => (
+              <div key={i}>
+                <h4>Health</h4>
+                <img src={health.multimedia[2].url} alt="" />
+                <p>{health.abstract}</p>
+              </div>
+            ))}
+            {health.slice(2, 3).map((health, i) => (
+              <div key={i}>
+                <p>{health.abstract}</p>
+              </div>
+            ))}
+            {health.slice(3, 4).map((health, i) => (
+              <div key={i}>
+                <p>{health.abstract}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
