@@ -6,9 +6,9 @@ import styles from './World.module.css'
 const World = ({api}) => {
   return (
     <>
-    <HeaderSection section='WORLD'/>
+    <HeaderSection section='WORLD NEWS'/>
     <div className={styles.sectionText}>
-      <h1>World</h1>
+      <h1>World News</h1>
     </div>
     <div className={styles.sectionNav}>
       <ul>

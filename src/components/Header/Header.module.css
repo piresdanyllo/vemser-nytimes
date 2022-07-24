@@ -7,6 +7,7 @@
 .header div:first-child div:first-child svg {
     padding: 8px 9px 9px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .header div:first-child div:first-child svg:first-child {
@@ -70,11 +71,21 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-self: center;
+    font-size: 12px;
+    font-family: helvetica,arial,sans-serif;
 }
 
 .header div:nth-child(2) div:first-child span:first-child {
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.header div:nth-child(2) div:first-child span:last-child {
+    cursor: pointer;
+}
+
+.header div:nth-child(2) div:first-child span:last-child:hover {
+    color: #5a5a5a;
 }
 
 .header .clima{
@@ -121,7 +132,8 @@ small {
 
 .header > div:last-of-type::after{
     content: '';
-    border-bottom: 1px double #000;
+    border-bottom: 0.5px double #000;
+    height: 0.05vh;
     display: block;
 }
 

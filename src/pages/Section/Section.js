@@ -1,20 +1,58 @@
-import CardSection from "../../components/Card/CardSection/CardSection";
+import CardSection from "./CardSection/CardSection";
+import CardSectionMini from "./CardSection/CardSectionMini";
+import CardSectionAside from "./CardSection/CardSectionAside";
 import styles from "./Section.module.css";
 
 const Section = ({ api }) => {
-  return (
-    <>
-      {api.slice(2, 6).map((world, i) => (
-        <CardSection
-          key={i}
-          title={world.title}
-          abstract={world.abstract}
-          url={world.multimedia[1].url}
-          copyright={world.multimedia[1].copyright}
-        />
-      ))}
-    </>
-  );
+    return (
+        <>
+            <div className={styles.blocoNoticias}>
+
+                <div>
+                    {api.slice(1, 2).map((world, i) => (
+                        <CardSection
+                            key={i}
+                            url={world.multimedia[1].url}
+                            copyright={world.multimedia[1].copyright}
+                            kicker={world.kicker}
+                            title={world.title}
+                            abstract={world.abstract}
+                            byline={world.byline}
+                        />
+                    ))}
+                </div>
+
+                <div>
+                    {api.slice(2, 3).map((world, i) => (
+                        <CardSectionMini
+                            key={i}
+                            url={world.multimedia[1].url}
+                            copyright={world.multimedia[1].copyright}
+                            kicker={world.kicker}
+                            title={world.title}
+                            abstract={world.abstract}
+                            byline={world.byline}
+                        />
+                    ))}
+                </div>
+
+                <div>
+                    {api.slice(3, 4).map((world, i) => (
+                        <CardSectionAside
+                            key={i}
+                            url={world.multimedia[1].url}
+                            copyright={world.multimedia[1].copyright}
+                            kicker={world.kicker}
+                            title={world.title}
+                            abstract={world.abstract}
+                            byline={world.byline}
+                        />
+                    ))}
+                </div>
+
+            </div>
+        </>
+    );
 };
 
 export default Section;

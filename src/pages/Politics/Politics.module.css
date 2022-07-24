@@ -8,7 +8,12 @@
 
 .sectionText h1 {
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 900;
+}
+
+.sectionText h1:hover {
+    color: #000;
+    cursor: auto;
 }
 
 .sectionNav ul {
@@ -25,6 +30,7 @@
 
 .sectionNav ul li:hover {
     text-decoration: underline;
+    background-color: transparent;
 }
 
 .sectionNav ul li:first-child {

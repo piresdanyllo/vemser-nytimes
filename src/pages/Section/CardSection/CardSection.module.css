@@ -1,0 +1,81 @@
+/* --- Ordenando os blocos de notícias --- */
+.cardSection {
+    width: 40vw;
+    padding-right: 20px;
+    border-right: 1px solid #DFDFDF;
+
+}
+
+.cardSectionMini {
+    width: 22vw;
+    padding: 0 20px;
+    height: 100%;
+    border-right: 1px solid #DFDFDF;
+}
+
+.cardSectionAside {
+    width: 20vw;
+    padding-left: 20px;
+    height: 100%;
+}
+
+/* --- Definindo estilos --- */
+
+.cardSection div:first-child,
+.cardSectionMini div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardSection small,
+.cardSectionMini small,
+.cardSectionAside small {
+    font-size: 0.625rem;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 0.75rem;
+    margin-top: 5px;
+    color: #727272;
+    text-transform: uppercase;
+    display: flex;
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+.cardSection h3,
+.cardSectionMini h3,
+.cardSectionAside h3 {
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+.cardSection p,
+.cardSectionMini p,
+.cardSectionAside p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    color: #121212;
+}
+
+.cardSectionMini img {
+    max-width: 300px;
+}
+
+.cardSectionAside img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px 0 2px 2px;
+    float:right;
+}
+
+.cardSection div small:nth-child(1),
+.cardSectionMini div small:nth-child(1),
+.cardSectionAside div small:nth-child(1) {
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+

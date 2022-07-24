@@ -1,6 +1,6 @@
 import styles from './CardSection.module.css'
 
-const CardSectionMini = ({ title, abstract, url, copyright, kicker, byline }) => {
+const CardSectionMini = ({ url, copyright, kicker, title, abstract, byline }) => {
     return (
         <div className={styles.cardSectionMini}>
             <div>

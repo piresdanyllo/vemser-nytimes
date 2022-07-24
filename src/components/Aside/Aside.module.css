@@ -19,9 +19,11 @@
     margin: 20px 0;
 }
 
+
 .firstAside p {
     font-size: 14px;
     margin-top: 0;
+    color: #5a5a5a;
 }
 
 .secondAside {
@@ -49,6 +51,9 @@
 
 .thirdAside h3 {
     margin-top: 15px;
+}
+
+.thirdAside h3:hover {
 }
 
 .thirdAside div {

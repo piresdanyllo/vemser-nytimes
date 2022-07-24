@@ -22,3 +22,20 @@ a {
   color: #000;
   cursor: pointer;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: georgia,'times new roman',times,serif;
+  cursor: pointer;
+}
+
+p {
+  font-family: georgia,'times new roman',times,serif;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+  color: #5a5a5a;
+}
+
+span {
+  font-family: helvetica,arial,sans-serif;
+}
