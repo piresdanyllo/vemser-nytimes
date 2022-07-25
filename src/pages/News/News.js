@@ -42,7 +42,7 @@ const News = () => {
         <small>{item.caption} {item.copyright}</small>
         <p>{item.abstract}</p>
         <small>{item.byline}</small>
-        <small>{moment(item.created_date).format("DD/MM/YYYY")}</small>
+        <small>{moment(item.created_date).format("MMMM d, YYYY")}</small>
         <p>{item.abstract}</p>
       </div>
       ))}
