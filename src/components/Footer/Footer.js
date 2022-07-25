@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import List from "../List/List";
 import styles from "./Footer.module.css";
-import { ImNewspaper } from "react-icons/im";
+import { ImDelicious, ImNewspaper } from "react-icons/im";
+import { SiNewyorktimes } from "react-icons/si";
+import { GiKnifeFork } from "react-icons/gi";
+
+
 
 const Footer = () => {
     return (
@@ -99,12 +103,20 @@ const Footer = () => {
                 </div>
                 <div>
                     <span>SUBSCRIBE</span>
-                    <ul>
-                        <List value="Home Delivery" />
-                        <List value="Digital Subscriptions" />
-                        <List value="Games" />
-                        <List value="Cooking" />
-                    </ul>
+                    <div className={styles.listicons}>
+                        <span><ImNewspaper /><p>Home Delivery</p></span>
+                        <span><SiNewyorktimes /><p>Digital Subscriptions</p></span>
+                        <span><ImDelicious /><p>Games</p></span>
+                        <span><GiKnifeFork /><p>Cooking</p></span>
+                        {/* <ImNewspaper /> */}
+                        {/* <List value="Home Delivery" /> */}
+                        {/* <SiNewyorktimes /> */}
+                        {/* <List value="Digital Subscriptions" /> */}
+                        {/* <ImDelicious /> */}
+                        {/* <List value="Games" /> */}
+                        {/* <GiKnifeFork /> */}
+                        {/* <List value="Cooking" /> */}
+                    </div>
                     <ul>
                         <List value="Email Newsletters" />
                         <List value="Corporate Subscriptions" />
