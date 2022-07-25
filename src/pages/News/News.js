@@ -1,4 +1,5 @@
 import axios from "axios";
+import moment from "moment";
 import { useState, useEffect } from "react";
 import HeaderSection from "../../components/Header/HeaderSection/HeaderSection";
 import styles from "./News.module.css";
@@ -41,7 +42,7 @@ const News = () => {
         <small>{item.caption} {item.copyright}</small>
         <p>{item.abstract}</p>
         <small>{item.byline}</small>
-        <small>{item.created_date}</small>
+        <small>{moment(item.created_date).format("DD/MM/YYYY")}</small>
         <p>{item.abstract}</p>
       </div>
       ))}
