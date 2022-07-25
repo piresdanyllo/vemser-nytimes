@@ -9,6 +9,7 @@
 .sectionText h1 {
     font-size: 44px;
     font-weight: 900;
+    padding-bottom: 10px;
 }
 
 .sectionText h1:hover {
