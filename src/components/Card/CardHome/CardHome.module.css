@@ -2,9 +2,9 @@
     display: flex;
     width: 830px;
     padding: 24px 0;
-    border-top: 1px solid #121212;
     margin-top: 20px;
     justify-content: space-between;
+    border-top: 1px solid #d7d7d7;
 }
 
 .cardText {

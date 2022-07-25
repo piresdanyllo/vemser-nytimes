@@ -8,7 +8,7 @@
     border-right: 1px solid #C7C7C7;
 }
 
-.newsContainer div:nth-child(1) {
+.newsContainer a:first-child div:nth-child(1) {
     border-top: none;
     margin-top: 0;
 }
